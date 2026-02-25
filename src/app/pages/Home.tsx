@@ -6,6 +6,12 @@ import { Button } from '../components/ui/button';
 import { FadeIn } from '../components/ui/fade-in';
 import { cn } from '../../lib/utils';
 import murrelFishImage from "../../assets/fish.png";
+import heroImage from "../../assets/haritha-home_main.png";
+import handsImage from "../../assets/hands-new.jpg";
+import sheepImage from "../../assets/sheap-new.png";
+import henImage from "../../assets/hen-new.jpg";
+import harithaFarmImage from "../../assets/haritha-farm-image-1.png";
+
 
 // --- Components ---
 
@@ -49,7 +55,7 @@ export default function Home() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832&auto=format&fit=crop" 
+            src={heroImage} 
             alt="Haritha Farms Aerial" 
             className="w-full h-full object-cover"
           />
@@ -104,7 +110,7 @@ export default function Home() {
                         whileInView={{ scale: 1 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        src="https://images.unsplash.com/photo-1601408648796-349272138e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" 
+                        src={handsImage}
                         alt="Hands holding soil" 
                         className="w-full h-full object-cover"
                       />
@@ -251,6 +257,13 @@ export default function Home() {
                  img: "https://images.unsplash.com/photo-1756047890348-e3a5f8e9d9d0?q=80&w=1200&auto=format&fit=crop",
                  icon: Sprout
                },
+               { 
+                 title: "Pure Waters", 
+                 subtitle: "Sustainable Aquaculture",
+                 desc: "Chemical-free ponds mimicking natural river currents. Clean water ensures firm, clean-tasting fish.",
+                 img: murrelFishImage,
+                 icon: Sprout
+               },
             ].map((item, i) => (
                <div 
                   key={i} 
@@ -321,7 +334,7 @@ export default function Home() {
                      title="The Sheep"
                      subtitle="Native Grazing"
                      desc="Native breeds raised on vast open pastures. Our sheep graze on natural vegetation, resulting in meat that is rich in nutrients and authentic in flavor."
-                     img="https://images.unsplash.com/photo-1696017864874-cc40aeb5a33a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzaGVlcCUyMGZhcm0lMjBuYXRpdmUlMjBicmVlZHxlbnwxfHx8fDE3Njg2MjkyMDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                     img={sheepImage}
                      link="/farms/sheep"
                   />
                   <FarmCard 
@@ -329,7 +342,7 @@ export default function Home() {
                      title="The Hen"
                      subtitle="True Free-Range"
                      desc="Active foragers living under the sun. Our country hens are raised without cages or antibiotics, delivering eggs and meat with superior taste and texture."
-                     img="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=1200"
+                     img={henImage}
                      link="/farms/hen"
                   />
                   <FarmCard 
@@ -351,7 +364,7 @@ export default function Home() {
         description="Experience the purity of nature, uninterrupted. Join us in our mission to bring ethical, organic produce to your table."
         primaryAction={{ text: "Read Our Story", link: "/about" }}
         secondaryAction={{ text: "Explore Farms", link: "/farms" }}
-        backgroundImage="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2000&auto=format&fit=crop"
+        backgroundImage={harithaFarmImage}
       />
     </div>
   );

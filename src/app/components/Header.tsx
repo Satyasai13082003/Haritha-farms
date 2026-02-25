@@ -238,7 +238,7 @@ export function Header() {
                     : "border-primary/20 text-primary hover:border-primary hover:bg-primary hover:text-white"
             )}
           >
-            <Link to="/contact" className="text-[rgb(25,19,19)]">Visit Us</Link>
+            <Link to="/contact" className="!text-[rgb(34,94,54)]">Visit Us</Link>
           </Button>
         </div>
 

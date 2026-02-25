@@ -5,6 +5,8 @@ import { Sprout, Droplets, Heart, Sun, Wind, CloudRain, ArrowRight, ShieldCheck,
 import { Button } from '../components/ui/button';
 import { FadeIn } from '../components/ui/fade-in';
 import { CTASection } from '../components/ui/CTASection';
+import heroImage from "../../assets/haritha-home_main.png";
+import harithaFarmImage from "../../assets/haritha-farm-image-1.png";
 import { cn } from '../../lib/utils';
 
 // --- Components ---
@@ -60,7 +62,7 @@ export default function Practices() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1589555237794-bc9af923dc7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBjaGVja2luZyUyMGNyb3BzJTIwc3VucmlzZXxlbnwxfHx8fDE3NjgzMDEwMjd8MA&ixlib=rb-4.1.0&q=80&w=1920" 
+            src={heroImage} 
             alt="Farmer in field" 
             className="w-full h-full object-cover"
           />
@@ -89,7 +91,7 @@ export default function Practices() {
                      <div className="relative">
                         <div className="aspect-[4/5] overflow-hidden rounded-sm">
                            <img 
-                              src="https://images.unsplash.com/photo-1695544939032-fbd9ce414406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtJTIwbGFuZHNjYXBlJTIwY2luZW1hdGljJTIwZGFyayUyMG1vb2R5fGVufDF8fHx8MTc2ODYyNzk3MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                              src={harithaFarmImage}
                               alt="Farm landscape" 
                               className="w-full h-full object-cover"
                            />
