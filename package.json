@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "vite",
     "clean": "rimraf dist .vite coverage .cache .eslintcache",
-    "clean:logs": "powershell -Command \"Remove-Item -Path *.log -ErrorAction SilentlyContinue\"",
     "clean:all": "rimraf dist node_modules package-lock.json .vite coverage .cache .eslintcache",
     "reinstall": "npm install",
-    "build": "npm run clean && npm run clean:logs && vite build",
+    "build": "npm run clean && vite build",
     "rebuild": "npm run clean:all && npm install && vite build",
     "preview": "vite preview",
     "generate-sitemap": "node generate-sitemap.cjs"
