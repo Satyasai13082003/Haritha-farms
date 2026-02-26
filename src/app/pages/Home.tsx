@@ -63,16 +63,23 @@ export default function Home() {
 
         <div className="container mx-auto relative z-20">
         <div className="relative z-20 h-full container mx-auto flex flex-col justify-end pb-0 md:px-6">
-          <FadeIn delay={0.2} direction="up">
-            <div className="flex items-center gap-4 mb-6 md:mb-8">
-              <div className="h-[1px] w-8 md:w-12 bg-white/60"></div>
-              <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase"> • Organic Farming</span>
-            </div>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] text-white mb-8 md:mb-10 max-w-5xl">
-              <span className="block text-white font-bold text-[88px]">Naturally Raised.</span>
-              <span className="block not-italic text-white/90 font-light text-3xl sm:text-4xl md:text-[64px] lg:text-[80px] text-[64px]">Ethically Grown.</span>
-            </h1>
-          </FadeIn>
+         
+         <FadeIn delay={0.2} direction="up">
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
+                <div className="h-[1px] w-8 md:w-12 bg-white/60" />
+                <span className="text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
+                  • Organic Farming
+                </span>
+              </div>
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-8xl lg:text-9xl leading-[0.9] text-white mb-8 md:mb-10 max-w-5xl">
+                <span className="block text-white font-bold text-[88px]">
+                  Naturally Raised.
+                </span>
+                <span className="block not-italic text-white/90 font-light text-3xl sm:text-4xl md:text-[64px] lg:text-[80px] text-[64px]">
+                  Ethically Grown.
+                </span>
+              </h1>
+            </FadeIn>
           
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 w-full border-t border-white/20 pt-8 md:pt-10 mt-4">
             <FadeIn delay={0.4} direction="up">
